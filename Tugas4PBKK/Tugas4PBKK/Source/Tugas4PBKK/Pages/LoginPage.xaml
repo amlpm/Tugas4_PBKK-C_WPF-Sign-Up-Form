@@ -1,0 +1,64 @@
+﻿<Page x:Class="Tugas4PBKK.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tugas4PBKK"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="700"
+      Title="LoginPage">
+
+    <Border Background="{StaticResource BackgroundVeryLightBrush}">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/Background.jpg" />
+            </Grid.Background>
+
+            <!-- Main content scroll -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    TextBlock.TextAlignment="Center">
+
+                    <!-- Login main content white box -->
+                    <Border Background="{StaticResource ForegroundLightBrush}" 
+                            CornerRadius="10"
+                            Padding="15 50 15 15"
+                            Width="330"
+                            Margin="50 50 50 0">
+
+                        <StackPanel>
+
+                            <!-- Sign Up header -->
+                            <TextBlock Text="Create your Account" 
+                                   FontSize="{StaticResource FontSizeLarge}" 
+                                   FontFamily="{StaticResource LatoBold}"
+                                   Foreground="{StaticResource TextPurpleOneBrush}" />
+
+                            <!-- Sign up subtext-->
+                            <TextBlock Text="Let's Get Started" 
+                                       FontSize="{StaticResource FontSizeRegular}"
+                                       Foreground="{StaticResource BackgroundPurpleLightBrush}"
+                                       />
+
+                            <!-- Email -->
+                            <TextBox Tag="Email" />
+
+                            <!-- Password -->
+                            <TextBox Tag="Password" />
+
+                            <!-- Next button -->
+                            <Button Content="Next" HorizontalAlignment="Center" />
+
+                        </StackPanel>
+
+                    </Border>
+
+                    <Button Style="{StaticResource TextButton}" Content="Already Have an Account ? Click Here" HorizontalAlignment="Center" />
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</Page>
