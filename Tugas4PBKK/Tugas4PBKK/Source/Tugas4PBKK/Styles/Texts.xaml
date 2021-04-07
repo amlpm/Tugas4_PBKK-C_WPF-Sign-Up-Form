@@ -15,7 +15,7 @@
         <Setter Property="FontFamily" Value="{StaticResource LatoRegular}" />
         <Setter Property="Padding" Value="10" />
         <Setter Property="Margin" Value="0 5 0 5" />
-        <Setter Property="BorderBrush" Value="{StaticResource WordBlueBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource WordPurpleBrush}" />
         <Setter Property="BorderThickness" Value="0 0 0 1" />
 
         <Setter Property="Template">
@@ -61,10 +61,10 @@
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="BorderBrush" TargetName="border" Value="#FF7EB4EA"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#CC99CC"/>
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="True">
-                            <Setter Property="BorderBrush" TargetName="border" Value="#FF569DE5"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#CC99CC"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
